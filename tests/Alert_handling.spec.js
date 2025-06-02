@@ -12,6 +12,8 @@ test('ALert' ,async ({page}) =>{
         expect(dialog.type()).toBe('alert')
         expect(dialog.message).toContain('I am an alert box!')
         await dialog.accept();
+        //await dialog.dismiss();
+        //await dialog.type('Tejas').accept();
     })
 
     await page.click('//*[@id="alertBtn"]');
